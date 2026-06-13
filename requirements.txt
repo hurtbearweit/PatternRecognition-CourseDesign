@@ -1,0 +1,6 @@
+Pillow
+PyMuPDF
+python-docx
+torch
+tqdm
+ultralytics

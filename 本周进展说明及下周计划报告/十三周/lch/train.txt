@@ -1,0 +1,25 @@
+model.train(
+        data="/data1/lch/模式识别课程设计/visdrone.yaml",
+        epochs=100,  # 150 轮足够
+        imgsz=1024,  # 小目标必备！提升巨大
+        batch=8,  # 1280 必须用 4
+        device=3,
+        workers=8,
+        patience=15,  # 早停
+        lr0=0.0005,  # 学习率降低
+        lrf=0.01,
+        mosaic=True,  # 增强
+        mixup=0.1,
+        copy_paste=0.2,
+        degrees=5.0,
+        amp=True,
+        val=True,
+        plots=True,
+
+        verbose=True,
+
+        cls=2,
+        # cls_pw=1.0,   # 自动逆频率加权
+        box=7.5,
+        iou=0.5
+    )

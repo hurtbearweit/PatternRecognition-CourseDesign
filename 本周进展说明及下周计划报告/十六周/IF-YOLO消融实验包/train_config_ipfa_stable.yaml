@@ -1,0 +1,37 @@
+# Stable rerun config for YOLOv8s + IPFA.
+# Compared with the unified ablation config, only lr0 and amp are changed
+# to avoid NaN/Inf caused by mixed precision and a high initial learning rate.
+epochs: 100
+imgsz: 960
+batch: 4
+nbs: 64
+optimizer: AdamW
+lr0: 0.001
+lrf: 0.01
+patience: 20
+deterministic: true
+close_mosaic: 10
+mosaic: 1.0
+copy_paste: 0.2
+mixup: 0.1
+degrees: 5.0
+translate: 0.1
+scale: 0.3
+fliplr: 0.5
+flipud: 0.0
+cls: 2.0
+box: 7.5
+dfl: 1.5
+iou: 0.5
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+device: 0
+workers: 0
+cache: false
+amp: false
+val: true
+plots: true
+seed: 0

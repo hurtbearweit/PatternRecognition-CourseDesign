@@ -1,0 +1,27 @@
+{
+  "model": "/mnt/data3/lch/模式识别课程设计/十七周/if_yolov8s_wiou_csfmlite_dys_p4p3.yaml",
+  "name": "week15_if_wiou_csfmlite_dys_p4p3",
+  "metrics": {
+    "metrics/precision(B)": 0.5917958370357584,
+    "metrics/recall(B)": 0.49163606096149354,
+    "metrics/mAP50(B)": 0.4948763656103816,
+    "metrics/mAP50-95(B)": 0.28518383150030485,
+    "fitness": 0.28518383150030485
+  },
+  "class_ap50_95": {
+    "pedestrian": 0.2731746507624036,
+    "person": 0.18561224157525757,
+    "bicycle": 0.12345556705445104,
+    "car": 0.58635102297863,
+    "van": 0.3686237579838109,
+    "truck": 0.2884460174561118,
+    "tricycle": 0.199734697685326,
+    "awning-tricycle": 0.10985228603173092,
+    "bus": 0.4427319581482726,
+    "motor": 0.27385611532705434
+  },
+  "ap_small_note": "Ultralytics detect val does not expose AP_small unless COCO-json eval is enabled; use save_json=True with COCO-format labels if needed.",
+  "model_size_bytes": 23158468,
+  "latency_ms_batch1_imgsz960": 15.23358272126643,
+  "fps_batch1_imgsz960": 65.64443954500454
+}

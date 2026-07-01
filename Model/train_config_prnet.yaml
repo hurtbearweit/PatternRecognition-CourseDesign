@@ -1,0 +1,32 @@
+# PRNet uses the same week-15 settings, with a smaller physical batch to fit
+# its high-resolution P2 refinement features into an 8 GB GPU.
+data: D:/大三下/模式识别课设/Model/VisDrone.yaml
+epochs: 100
+imgsz: 960
+batch: 2
+nbs: 64
+optimizer: AdamW
+lr0: 0.003
+lrf: 0.01
+patience: 20
+
+# Data augmentation
+mosaic: 1.0
+copy_paste: 0.2
+mixup: 0.1
+degrees: 5.0
+scale: 0.3
+
+# Loss weights and validation threshold
+cls: 2.0
+box: 7.5
+iou: 0.5
+
+# Runtime settings
+device: 0
+workers: 0
+cache: false
+amp: true
+val: true
+plots: true
+seed: 0

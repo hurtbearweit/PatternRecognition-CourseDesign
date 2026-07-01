@@ -1,0 +1,4 @@
+model,params,gflops_960,note
+A_if_wiou_csfmlite,11290506,105.9,Printed by Ultralytics model.info(imgsz=960)
+B_if_wiou_csfmlite_wff_p3p2,11294604,106.4,Printed by Ultralytics model.info(imgsz=960)
+

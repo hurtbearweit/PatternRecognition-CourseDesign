@@ -1,0 +1,26 @@
+data: configs/visdrone.yaml
+epochs: 100
+imgsz: 1280
+batch: 4
+optimizer: AdamW
+lr0: 0.003
+lrf: 0.01
+patience: 20
+
+mosaic: 1.0
+copy_paste: 0.2
+mixup: 0.1
+degrees: 5.0
+scale: 0.3
+
+cls: 2.0
+box: 7.5
+iou: 0.5
+
+device: 0
+workers: 0
+cache: false
+amp: true
+val: true
+plots: true
+seed: 0

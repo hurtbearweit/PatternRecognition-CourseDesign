@@ -1,0 +1,15 @@
+{
+  "model": "week17/configs/if_yolov8s_wiou_csfmlite_wff_p3p2.yaml",
+  "loss_config": "wiou_v3",
+  "params": 11294604,
+  "detect_scales": 4,
+  "contains_wff": true,
+  "contains_dfl": true,
+  "forbidden_modules": [],
+  "forward_shapes": {
+    "640": [[1, 14, 34000]],
+    "960": [[1, 14, 76500]]
+  },
+  "gflops_960": 106.4,
+  "note": "Example check result. Re-run check_wff_model.py on the server to regenerate this file."
+}

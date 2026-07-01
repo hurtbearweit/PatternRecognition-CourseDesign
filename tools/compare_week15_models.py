@@ -12,6 +12,9 @@ files = {
     "FBRT-YOLO": Path(
         r"D:\大三下\模式识别课设\本周进展说明及下周计划报告\十五周\fbrt_yolov8s_visdrone_pretrained_week18-2\results.csv"
     ),
+    "PRNet": Path(
+        r"D:\大三下\模式识别课设\本周进展说明及下周计划报告\十五周\train-35\results.csv"
+    ),
 }
 
 for name, path in files.items():

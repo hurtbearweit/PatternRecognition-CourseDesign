@@ -1,0 +1,66 @@
+[
+  {
+    "name": "yolo",
+    "yaml": "configs\\yolov8s.yaml",
+    "params": 11139470,
+    "output_shapes": [
+      [
+        1,
+        14,
+        33600
+      ]
+    ],
+    "contains_wff": false,
+    "contains_mkp": false,
+    "contains_dysample": false,
+    "contains_ldr": false
+  },
+  {
+    "name": "if_yolo",
+    "yaml": "configs\\if_yolov8s.yaml",
+    "params": 39437729,
+    "output_shapes": [
+      [
+        1,
+        14,
+        136000
+      ]
+    ],
+    "contains_wff": false,
+    "contains_mkp": false,
+    "contains_dysample": false,
+    "contains_ldr": false
+  },
+  {
+    "name": "csfmlite",
+    "yaml": "configs\\if_yolov8s_wiou_csfmlite.yaml",
+    "params": 11290506,
+    "output_shapes": [
+      [
+        1,
+        14,
+        136000
+      ]
+    ],
+    "contains_wff": false,
+    "contains_mkp": false,
+    "contains_dysample": false,
+    "contains_ldr": false
+  },
+  {
+    "name": "final_wff",
+    "yaml": "configs\\if_yolov8s_wiou_csfmlite_wff_p3p2.yaml",
+    "params": 11294604,
+    "output_shapes": [
+      [
+        1,
+        14,
+        136000
+      ]
+    ],
+    "contains_wff": true,
+    "contains_mkp": false,
+    "contains_dysample": false,
+    "contains_ldr": false
+  }
+]

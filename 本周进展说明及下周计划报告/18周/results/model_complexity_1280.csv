@@ -1,0 +1,6 @@
+model,params,gflops_1280,notes
+yolo,11139470,114.7,YOLOv8s baseline
+if_yolo,39437729,287.2,Basic IF-YOLO
+csfmlite,11290506,188.3,IF-YOLO + WIoU v3 + CSFM-Lite
+final_wff,11294604,189.1,IF-YOLO + WIoU v3 + CSFM-Lite + WFF(P3->P2)
+

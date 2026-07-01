@@ -1,0 +1,30 @@
+# 第十五周统一训练配置文件
+data: D:/大三下/模式识别课设/Model/VisDrone.yaml
+epochs: 100
+imgsz: 960
+batch: 4
+optimizer: AdamW
+lr0: 0.003
+lrf: 0.01
+patience: 20
+
+# 数据增强
+mosaic: 1.0
+copy_paste: 0.2
+mixup: 0.1
+degrees: 5.0
+scale: 0.3
+
+# 损失权重与阈值
+cls: 2.0
+box: 7.5
+iou: 0.5
+
+# 训练设置
+device: 0
+workers: 0
+cache: false
+amp: true
+val: true
+plots: true
+seed: 0
